@@ -19,6 +19,7 @@ RUN docker-php-ext-install curl \
     && docker-php-ext-install mcrypt \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install pdo_sqlite \
+    && docker-php-ext-install mysql \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install zip \
     && docker-php-ext-install -j$(nproc) intl \
